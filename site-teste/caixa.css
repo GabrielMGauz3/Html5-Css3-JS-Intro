@@ -1,0 +1,12 @@
+#caixa {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: mover 10s infinite;
+}
+@keyframes mover {
+    0% { left: 0; }
+    50% { left: 96%; }
+    100% { left: 0; }
+}

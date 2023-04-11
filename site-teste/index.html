@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Teste JS</title>
 </head>
 <body>
-    <h1>Olá, Mundo</h1>
-    <h2>Esse hmtl será uma tela de cadastro</h2>
-    <p>Que Deus nos abençoe</p>
-    
+	<h1>Exemplo de JavaScript</h1>
+	<p>Clique no botão abaixo para mudar o texto.</p>
+	<button onclick="mudarTexto()">Mudar Texto</button>
+	<p id="texto">Texto inicial.</p>
+
+	<script>
+		function mudarTexto() {
+			document.getElementById("texto").innerHTML = "Novo texto!";
+		}
+	</script>
 </body>
 </html>

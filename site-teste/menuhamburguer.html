@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="menuhamburguer.css">
+    <title>Menu Hamburguer text</title>
+</head>
+
+<body>
+
+    <nav id="menu">
+		<div class="logo">Meu Site</div>
+		<div class="hamburguer" id="hamburguer">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</nav>
+	<div id="conteudo">
+		<h1>Meu conteúdo aqui</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam leo sit amet velit dictum, eu elementum odio blandit.</p>
+	</div>
+       
+</body>
+
+<script>
+	var hamburguer = document.getElementById("hamburguer");
+	var menu = document.getElementById("menu");
+	hamburguer.addEventListener("click", function() {
+		hamburguer.classList.toggle("active");
+		menu.classList.toggle("active");
+	});
+</script>
+
+</html>

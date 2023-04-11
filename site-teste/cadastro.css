@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizar o título do formulário */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilizar os rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilizar os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Estilizar os botões de envio e limpeza */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilizar os botões de envio e limpeza quando o cursor estiver sobre eles */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilizar a mensagem de erro quando um campo obrigatório não é preenchido */
+input:invalid {
+    border-color: #E74C3C;
+}
+
+/* Estilizar a mensagem de erro quando a confirmação de senha é diferente da senha */
+input[type="password"]:invalid {
+    border-color: #E74C3C;
+}
+
+/* Estilizar o botão de envio quando um campo obrigatório não é preenchido */
+input[type="submit"][disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
