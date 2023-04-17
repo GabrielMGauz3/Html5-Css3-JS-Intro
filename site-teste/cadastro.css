@@ -8,6 +8,19 @@ h2 {
     margin-top: 20px;
 }
 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Estilizar os rótulos dos campos */
 label {
     display: block;
