@@ -1,11 +1,20 @@
+html, body {
+    height: 100%;
+  }
 body {
     font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    background-image: url('img/background1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Estilizar o título do formulário */
 h2 {
-    text-align: center;
-    margin-top: 20px;
+    text-align: left;
+    margin-top: 40px;
+    color: #c9590f;
 }
 
 form {
@@ -17,7 +26,7 @@ form {
     margin: 0 auto;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
 
@@ -43,7 +52,7 @@ input[type="number"] {
 /* Estilizar os botões de envio e limpeza */
 input[type="submit"],
 input[type="reset"] {
-    background-color: #4CAF50;
+    background-color: #ca631f;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -54,7 +63,7 @@ input[type="reset"] {
 /* Estilizar os botões de envio e limpeza quando o cursor estiver sobre eles */
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-    background-color: #45a049;
+    background-color: #c9590f;
 }
 
 /* Estilizar a mensagem de erro quando um campo obrigatório não é preenchido */

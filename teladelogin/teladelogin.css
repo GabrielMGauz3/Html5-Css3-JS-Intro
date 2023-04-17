@@ -1,8 +1,15 @@
+html, body {
+    height: 100%;
+  }
 body {
-    background-color: #f2f2f2;
+    background-color: #e79ae5;
+    background-image: url('img/Imagem\ de\ Fundo\ de\ Tela\ Patinhas\ Coloridas.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 form {
-    background-color: #fff;
+    background-color: #ffeefe;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -17,7 +24,7 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333;
+    color: #e79ae5;
 }
 input[type="text"],
 input[type="password"] {
@@ -29,7 +36,7 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #e79ae5;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -37,5 +44,5 @@ input[type="submit"] {
     cursor: pointer;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #f4f74c;
 }
