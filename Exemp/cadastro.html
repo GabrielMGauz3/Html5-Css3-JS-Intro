@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<Link rel="stylesheet" type="text/css" href="cadastro.css">
+		<script language="javascript" src="script.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Junte-se a nós</title>
+	</head>
+
+	<body>
+		<header>
+
+        </header>
+        <div class="container">
+            <form action="#" method="post">
+                <fieldset>
+                    <div class="campo">
+                        <label>CPF/CNPJ</label>
+                        <label>
+                            <input type="radio" name="clienteempresa" value="cliente"> Pessoa física
+                        </label>
+                        <label>
+                            <input type="radio" name="clienteempresa" value="empresa"> Pessoa Jurídica
+                        </label>
+                        <input type="text" placeholder="Ex 000.000.000-00 / 00.000.000/0000-00" id="cpfcnpj" name="cpfcnpj" style="width: 22em" value="">
+                    </div>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="snome">Sobrenome</label>
+                            <input type="text" id="snome" name="snome" style="width: 10em" value="">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <label>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 22em" value="">
+                    </div>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="senha">Defina uma senha:</label>
+                            <input type="password" id="senha" name="senha" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="rsenha">Repita sua senha:</label>
+                            <input type="password" id="rsenha" name="rsenha" style="width: 10em" value="">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" placeholder="(xx)00000-0000" id="telefone" name="telefone" style="width: 10em" value="">
+                    </div>
+            
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="PR">PR</option>
+                                <option value="SC">SC</option>
+                                <option value="RS">RS</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label for="nomerua">Rua</label>
+                        <input type="text" id="nomerua" name="nomerua" style="width: 22em" value="">
+                    </div>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" name="bairro" style="width: 15em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="numcasa">n°/apt</label>
+                            <input type="text" placeholder="Ex 000/000" id="numcasa" name="num casa" style="width: 5em" value="">
+                        </div>
+                    </fieldset>
+            
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="6" placeholder="Fique à vontade para tirar suas dúvidas" style="width: 22em" id="mensagem" name="mensagem"></textarea>
+                    </div>
+            
+                    <div class="campo">
+                        <label>Newsletter</label>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da empresa
+                        </label>
+                    </div>
+            
+                    <button class="botao" type="submit" name="submit">Cadastrar</button>
+                </fieldset>
+            </form>
+        </div>
+
+		<footer>
+				 Desenvolvido por GMAG.
+		</footer>
+
+	</body>
+
+</html>

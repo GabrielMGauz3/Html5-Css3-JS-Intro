@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d3d3d3;
+}
+.content{
+    background-color: #fff;
+    border-radius: 20px;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #228b22;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-bemvindo{
+    color: #fff;
+}
+.title-criar{
+    color: #228b22;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-paralogar{
+    color: #fff;
+}
+.description-paracriar{
+    color: #95a5a6;
+}
+.description-criar{
+    color: #95a5a6;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem; 
+}
+.btn-primeiro{
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color 2s;
+}
+.btn-primeiro:hover{
+    background-color: #fff;
+    color: #228b22;
+
+}
+.btn-segundo{
+    background-color: #228b22;
+    border: 1px solid #228b22;
+    transition: background-color 2s;
+}
+.btn-segundo:hover{
+    background-color: #fff;
+    border: 1px solid #228b22;
+    color: #228b22;
+}
+.primeiro-content{
+    display: flex;
+}
+.primeiro-content .segunda-coluna{
+    z-index: 12;
+}
+.primeira-coluna{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.segunda-coluna{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media{
+    margin: 1rem 0;
+}
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.item-social-media a{
+    color: #95a5a6;
+}
+.item-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.item-social-media:hover{
+    background-color: #228b22;
+    color: #fff;
+    transition: background-color 2s;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input{
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icone-modificar{
+    color: #95a5a6;
+    padding: 0 5px;
+}
+/* SEGUNDA TELA*/
+.segundo-content{
+    position: absolute;
+    display: flex;
+}
+.segundo-content .primeira-coluna{
+    order: 2;
+    z-index: -1;
+}
+.segundo-content .segunda-coluna{
+    order: 1;
+    z-index: -1;
+}
+.senha{
+    color: #228b22;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.entrar-js .primeiro-content .primeira-coluna{
+    z-index: -1;
+}
+
+.entrar-js .segundo-content .segunda-coluna{
+    z-index: 12;
+}
+.entrar-js .segundo-content .primeira-coluna{
+    z-index: 14;
+}
+
+.entrar-js .content::before{
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    animation: slidein 2s;
+
+    z-index: 13;
+
+}
+
+.inscrever-js .content::before{
+    animation: slideout 2s;
+
+    z-index: 13;
+}
+
+.inscrever-js .segundo-content .primeira-coluna,
+.inscrever-js .segundo-content .segunda-coluna{
+    z-index: -1;
+}
+
+.inscrever-js .primeiro-content .segunda-coluna{
+    z-index: 12;
+}
+.inscrever-js .primeiro-content .primeira-coluna{
+    z-index: 14;
+}
+
+/*DESLOCAMENTO DO CONTEÚDO ATRAS DO CONTENT::BEFORE*/
+.entrar-js .primeiro-content .segunda-coluna{
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 2s;
+}
+.inscrever-js .segundo-content .segunda-coluna{
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 2s;
+}
+
+/*ANIMAÇÃO CSS PARA O CONTEUDO*/
+@keyframes deslocamentoEsq{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDir{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+    25%{
+        left: 80px;
+        opacity: .5;
+    }
+    50%{
+        left: 100px;
+        opacity: .2;
+    }
+    to{
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+/* ANIMAÇÃO CSS transição de colunas*/
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+    25%{
+        left: 5%;
+        width: 50%;
+    }
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+    75%{
+        left: 45%;
+        width: 50%
+    }
+    to{
+        left: 60%;
+        width: 40%
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+    75%{
+        left: 5%;
+        width: 50%
+    }
+    to{
+        left: 0;
+        width: 40%
+    }
+}
